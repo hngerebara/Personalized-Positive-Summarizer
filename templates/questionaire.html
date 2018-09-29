@@ -1,0 +1,35 @@
+{% extends "template2.html" %}
+
+{% block content %}
+
+{% if error %}
+ <p class=error><strong> Error:</strong>{{error}}
+{% endif %}
+<form action="" method="POST" onsubmit="validate()">
+<div><br>
+
+<br>Your General Interests<br> 
+<br><input type="checkbox" id="option1" value="1">Playing video games<br>
+<input type="checkbox" id="option2" value="2">Watching cartoons<br>
+<input type="checkbox" id="option3" value="3">Playing Football<br>
+<input type="checkbox" id="option4" value="4">Horse Riding<br>
+<input type="checkbox" id="option5" value="5">Playing BasketBall<br>
+<input type="checkbox" id="option6" value="6">Tennis<br>
+<input type="checkbox" id="option7" value="7">Cheerleading<br>
+<input type="checkbox" id="option9" value="9">Playing musical instuments<br>
+<input type="checkbox" id="option10" value="10">Latest Gadgets <br>
+<input type="checkbox" id="option11" value="11">Arts and Painting<br>
+
+<br>News Interests<br> 
+<input type="checkbox" id="option12" value="latest">Latest Published stories<br>
+<input type="checkbox" id="option13" value="World">World News<br>
+<input type="checkbox" id="option14" value="Top">Top News<br>
+<input type="checkbox" id="option15" value="Uk">Uk News<br>
+<input type="checkbox" id="option16" value="africa">Africa News<br>
+<br><input type="submit" value="Submit"/>
+
+
+<br>
+</form>
+{% endblock %}
+

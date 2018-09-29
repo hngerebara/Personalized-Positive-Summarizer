@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<title> </title>
+		
+		<meta charset="utf-8">
+
+		<title> PPSC  </title>
+		
+	  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+ 		<link rel="stylesheet" type="text/css" href="static/css/style.css">
+		<script src= "js/custom.js"> </script>
+	</head>
+		
+<body>
+<header>
+<h1> PPSC </h1>
+</header>
+
+<style>
+body {background: url("static/background3.jpg")no-repeat center center fixed; 
+  background-size: cover;} 
+</style>
+
+<div id="nav">	
+<ul>
+    <li>
+	<a href="/">Home</a>
+    </li>
+    <li>
+	<a href="/">News types</a>
+	<ul>
+	<li><a href="/latest">Latest </a></li>
+	<li><a href="/world">World </a></li>
+	<li><a href="/uk">UK </a></li>
+	<li><a href="/africa">Africa </a></li>
+	</ul>
+    </li>
+    <li>
+	<a href="/ent">Entertainment</a>
+    </li>
+    <li>
+	<a href="/sci">Science</a>
+    </li>
+    <li>
+	<a href="/nature">Nature</a>
+    </li> 
+    <li>
+	<a href="/tech">Technology</a>
+   </li>
+   <li>
+	<a href="#">Sports</a>
+	<ul>
+	<li><a href="/allsports">All Sports</a></li>
+	<li><a href="/football">Football</a></li>
+	<li><a href="/tennis">Tennis</a></li>
+	</ul>
+   </li>
+<li>
+	<a href="/info">More Information</a>
+   </li>
+</ul>
+	</div> <!-- end #nav -->
+
+
+
+
+<div class= "center">
+  <form method="get">
+   Sentiment: 0<input class="slider-width100" type="range" name="I" min="0" max="1" value={{I}} step="0.1">1<br>
+ Readability: 0<input class="slider-width100" type="range" name="J" min="0" max="14" value={{J}} step="0.1">14<br>
+  Summary: 0<input class="slider-width100" type="range" name="K" min="0" max="1" value={{K}} step="0.1">1<br>
+           <input type="submit" value="Update!">
+  </form>
+</div>
+
+<div id="sidebar">
+<h3>Recommended</h3>
+</div>
+
+<div id="main">
+
+
+
+<div>
+		{% block content %}
+		{% endblock %}
+</div>
+
+</div>
+<footer>
+  <p>Created By: </p>
+</footer>
+</body>
+</html>
+

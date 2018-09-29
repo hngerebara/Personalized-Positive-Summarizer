@@ -1,0 +1,157 @@
+
+body {
+max-width: 1200px;
+margin: 0 auto;
+color: #0e0e0e;
+font-family: Arial, verdana, tahoma , serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400
+}
+
+
+ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  
+}
+ul li {
+  font: bold 18px/20px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+ul li:hover {
+  background: #f2f4f9;
+  color: #a8abae;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+   
+  display: block; 
+  color: #CC2EFA;
+  text-shadow: 0 -1px 0 #000;
+}
+
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.center {
+padding:25px 25px 35px 280px;
+   
+}
+
+
+
+.slider-width100
+{
+    width: 300px;
+}
+
+
+#hsidebar {
+position:fixed;
+width:300px;
+height:100%;
+float:left;
+top: 300px;
+
+margin:25px;
+}
+
+#hsidebar a {
+text-decoration:none;
+}
+
+#hsidebar li {
+list-style:none;
+}
+
+#sidebar {
+position:fixed;
+width:300px;
+height:100%;
+float:left;
+top: 300px;
+
+margin:25px;
+}
+
+#sidebar a {
+text-decoration:none;
+}
+
+#sidebar li {
+list-style:none;
+}
+
+header {
+width: 100%;
+background: #336699;
+float: left;
+margin: 1% 0;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #202020
+}
+
+#main {
+width:950px;!important
+background: #ffffff;
+float:right;
+margin: 1% 0;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #202020
+}
+
+#main h1 {
+font-size : 20px;
+text-align : center;
+color : #003399;
+margin: 2% 0 }
+
+#main p {
+text-align : left; 
+text-indent : 16px ;
+margin: 2% 10% }
+
+
+#hcontent {
+float:right;
+padding:10px;
+margin-top:150px;
+width:950px;!important
+}
+
+footer {
+float: left;
+}
+
